@@ -5,7 +5,7 @@ main {
     flex-direction: column;
 }
 
-.galeria img{
+.galeria img {
     border: 6px solid #024caa;
     width: 100%;
     height: 100%;
@@ -25,11 +25,11 @@ main {
     grid-column: span 2;
 }
 
-.galeria img:nth-child(3){
+.galeria img:nth-child(3) {
     grid-column: span 2;
 }
 
-.galeria img:nth-child(5){
+.galeria img:nth-child(5) {
     grid-column: span 2;
 }
 

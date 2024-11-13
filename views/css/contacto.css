@@ -1,4 +1,4 @@
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,15 +6,16 @@ main{
     flex-direction: column;
 }
 
-.borde-form{
+.borde-form {
     clip-path: polygon(0 7%, 100% 0, 91% 100%, 10% 100%);
     background-color: #024caa;
     height: 420px;
     width: 420px;
     padding: 10px;
+    filter: drop-shadow(2px 2px 8px black);
 }
 
-form{
+form {
     clip-path: polygon(0 7%, 100% 0, 91% 100%, 10% 100%);
     display: flex;
     justify-content: space-around;
@@ -27,7 +28,7 @@ form{
     transition: .3s;
 }
 
-form input{
+form input {
     margin-top: 20px;
     border: solid 3px #024caa;
     padding: 10px;
@@ -36,12 +37,26 @@ form input{
     height: 5%;
 }
 
-.boton-enviar{
+.boton-enviar {
     cursor: pointer;
     font-size: 25px;
     width: 200px;
     height: 50px;
     background-color: #024caa;
-    border: 3px  solid;
+    border: 3px solid;
     color: whitesmoke;
+}
+
+@media (max-width: 600px) {
+    form {
+        width: 300px;
+    }
+
+    form input {
+        width: auto;
+    }
+
+    .borde-form {
+        width: 320px;
+    }
 }

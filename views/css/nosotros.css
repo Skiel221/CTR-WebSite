@@ -1,4 +1,4 @@
-.nosotros-contenedor{
+.nosotros-contenedor {
     display: flex;
     flex-direction: column;
     margin: 30px 0px 30px 0px;
@@ -9,12 +9,12 @@
     justify-content: center;
 }
 
-.nosotros-fila{
+.nosotros-fila {
     display: flex;
     flex-direction: row;
 }
 
-.skiel{
+.skiel {
     margin: 20px 0px 20px 0px;
     padding: 10px;
     width: 70%;
@@ -30,12 +30,12 @@
     box-shadow: 10px 10px 0px rgba(0, 0, 0, .4);
 }
 
-.skiel img{
+.skiel img {
     width: 200px;
     height: 200px;
 }
 
-.pollito{
+.pollito {
     margin: 20px 0px 20px 0px;
     padding: 10px;
     width: 70%;
@@ -51,16 +51,16 @@
     box-shadow: 10px 10px 0px rgba(0, 0, 0, .4);
 }
 
-.pollito img{
+.pollito img {
     width: 200px;
     height: 200px;
 }
 
-.descripcion{
+.descripcion {
     padding-left: 10px;
 }
 
-.mas-info{
+.mas-info {
     margin-top: 10px;
     width: 99%;
     height: auto;
@@ -69,7 +69,7 @@
     border: 6px solid rgba(106, 238, 255, 0.8);
 }
 
-.contenido{
+.contenido {
     width: 100%;
     justify-content: space-between;
     display: flex;
@@ -77,27 +77,42 @@
     padding: 10px;
 }
 
-.contenido-habilidades{
+.contenido-habilidades {
     width: 33%;
 }
 
-.contenido-profesores{
+.contenido-profesores {
     width: 33%;
 }
 
-.contenido-grupo{
+.contenido-grupo {
     width: 23%;
 }
 
-@media (max-width: 1200px){
-    .skiel, .pollito{
+@media (max-width: 1200px) {
+
+    .skiel,
+    .pollito {
         height: auto;
     }
-    .nosotros-fila{
+
+    .nosotros-fila {
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
     }
-}@media (max-width: 800px){
-    .contenido{
+}
+
+@media (max-width: 800px) {
+    .contenido {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .contenido-grupo,
+    .contenido-habilidades,
+    .contenido-profesores {
+        width: 70%;
+        height: auto;
     }
 }

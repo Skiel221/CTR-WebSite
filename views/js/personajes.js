@@ -1,4 +1,3 @@
-// import { personajes } from './pj.js';
 
 const personajes = [
     {
@@ -138,6 +137,7 @@ function mostrarListaPersonajes() {
 function mostrarInformacionPersonaje(index) {
     const personaje = personajes[index];
     document.getElementById('character-name').textContent = personaje.nombre;
+    document.getElementById('character-name-ex').textContent = personaje.nombre;
     document.getElementById('character-biography').textContent = personaje.biografia;
     document.getElementById('character-speed').textContent = personaje.velocidad;
     document.getElementById('character-acceleration').textContent = personaje.aceleracion;
