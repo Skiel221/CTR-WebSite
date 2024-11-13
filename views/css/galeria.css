@@ -17,8 +17,8 @@ main {
     justify-content: center;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 .galeria img:first-child {
@@ -29,7 +29,27 @@ main {
     grid-column: span 2;
 }
 
-.galeria img:nth-child(5) {
+.galeria img:nth-child(7) {
+    grid-column: span 2;
+}
+
+.galeria img:nth-child(8) {
+    grid-column: span 2;
+}
+
+.galeria img:nth-child(10) {
+    grid-column: span 2;
+}
+
+.galeria img:nth-child(11) {
+    grid-column: span 2;
+}
+
+.galeria img:nth-child(12) {
+    grid-column: span 3;
+}
+
+.galeria img:nth-child(14) {
     grid-column: span 2;
 }
 
